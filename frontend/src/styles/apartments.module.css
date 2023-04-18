@@ -1,0 +1,12 @@
+.single {
+    padding: 2px 16px;
+    background-color: white;
+    display: block;
+    margin: 20px 10px;
+    border-left: 8px white;
+    text-emphasis-color: black;
+}
+
+.single:hover {
+    border-left: 8px red;
+}
