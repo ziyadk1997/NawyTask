@@ -6,6 +6,6 @@
 
  2 - cd to Backend in the terminal and execute npm install then npm start
 
- 3 - cd to Frontend in terminal and execute
+ 3 - cd to Frontend in terminal and execute npm run build then npm start
 
  4 - cd to ReactApp in terminal and execute
