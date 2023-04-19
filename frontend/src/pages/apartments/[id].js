@@ -1,3 +1,5 @@
+import styles from "../../styles/apartments.module.css";
+
 export const getStaticPaths = async () => {
   const res = await fetch("http://localhost:8100/api/apartment/getApartments");
   const data = await res.json();
@@ -28,12 +30,16 @@ export const getStaticProps = async (context) => {
 const Apartment = ({ apartment }) => {
   return (
     <div>
-      <h2>Apartment Details</h2>
+      <h2 className={styles.apartment_details_title}>Apartment Details</h2>
       <div>
-        <h3>Name : {apartment.name}</h3>
-        <h3>Description : {apartment.description}</h3>
-        <h3>Price : {apartment.price}</h3>
-        <h3>Location : {apartment.location}</h3>
+        <p className={styles.apartment_details}>Name : {apartment.name}</p>
+        <p className={styles.apartment_details}>
+          Description : {apartment.description}
+        </p>
+        <p className={styles.apartment_details}>Price : {apartment.price}</p>
+        <p className={styles.apartment_details}>
+          Location : {apartment.location}
+        </p>
       </div>
     </div>
   );

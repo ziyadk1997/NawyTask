@@ -1,12 +1,44 @@
 .single {
     padding: 2px 16px;
-    background-color: white;
+    background: #fff;
     display: block;
+    font-size: 30px;
     margin: 20px 10px;
-    border-left: 8px white;
+    border-left: 8px solid #fff;
+  }
+  .single:hover {
+    border-left: 8px solid blue;
+  }
+
+.title {
+    color: blue;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    font-size:50px;
+    text-align: center;
+    margin: 20px 10px;
     text-emphasis-color: black;
 }
 
-.single:hover {
-    border-left: 8px red;
+.apartment_details_title {
+    color: blue;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    font-size:30px;
+    margin: 20px 10px;
+    text-emphasis-color: black;
+}
+
+.apartment_details {
+    color: black;
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    font-size:20px;
+    padding-left:50px;
+    font-family: "Nunito";
+    margin: 20px 10px;
+    text-emphasis-color: black;
 }
