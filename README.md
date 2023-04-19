@@ -15,6 +15,12 @@ eg:
 "description":"test test"
 }
 
-3 - cd to Frontend in terminal and execute npm run build then npm start , frontend should be accessible on localhost:3000
+4 - cd to Frontend in terminal and execute npm run build then npm start , frontend should be accessible on localhost:3000
 
-4 - cd to ReactApp in terminal and execute npx expo start then use any emulator you like to test app
+5 - cd to ReactApp in terminal and execute npx expo start then use any emulator you like to test app
+
+
+# The Backend contains 3 endpoints:
+1-'http://localhost:8100/api/apartment/addApartment' for adding apartments
+2-'http://localhost:8100/api/apartment/getApartments' for fetching all apartment listings
+3-'http://localhost:8100/api/apartment/getApartments/{id}' for fetching a specific apartment
