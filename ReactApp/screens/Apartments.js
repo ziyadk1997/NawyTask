@@ -21,9 +21,10 @@ export default function ViewApartmentsScreen({ route, navigation }) {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <Text>Apartments</Text>
+        <Text style={styles.title}>Apartments</Text>
         {data.map((apartment) => (
           <Pressable
+            style={styles.single}
             key={apartment._id}
             onPress={() => viewApartment(apartment)}
           >
@@ -38,5 +39,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
+  },
+  title: {
+    color: "blue",
+    borderRadius: 10,
+    display: "block",
+    fontSize: 50,
+    textAlign: "center",
+    margin: 20,
+  },
+  single: {
+    padding: 5,
+    display: "block",
+    fontSize: 30,
+    margin: 20,
   },
 });

@@ -7,7 +7,6 @@ export default function Stack() {
   return (
     <StackNav.Navigator
       headerShown="none"
-      headerMode="none"
       initialRouteName="ViewApartmentsScreen"
     >
       <StackNav.Screen
