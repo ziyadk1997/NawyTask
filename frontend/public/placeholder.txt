@@ -1,0 +1,2 @@
+This folder holds static assets for the Next.js frontend.
+Placeholder file to ensure Docker COPY works.
