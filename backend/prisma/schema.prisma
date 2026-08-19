@@ -1,0 +1,29 @@
+generator client {
+  provider      = "prisma-client-js"
+  engineType    = "wasm"
+}
+
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Apartment {
+  id          String   @id @default(uuid())
+  unitName    String
+  unitNumber  String
+  project     String
+  price       Decimal
+  bedrooms    Int
+  bathrooms   Int
+  areaSqm     Float
+  description String?
+  imageUrl    String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([unitName])
+  @@index([unitNumber])
+  @@index([project])
+}
